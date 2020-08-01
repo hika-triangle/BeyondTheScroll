@@ -1,0 +1,197 @@
+
+body {
+  font-family: sans-serif;
+}
+h1, h2 {
+  font-weight: 400;
+  color: steelblue;
+}
+#nomalStudios > div {
+  margin: 1em 0;
+  padding: 0.5em;
+  background: #f8f8f8;
+  min-height: 3em;
+}
+
+#englishStudios > div {
+  margin: 1em 0;
+  padding: 0.5em;
+  background: #f8f8f8;
+  min-height: 3em;
+}
+
+#nomalFaculty > div {
+  margin: 1em 0;
+  padding: 0.5em;
+  background: #f8f8f8;
+  min-height: 3em;
+}
+
+#englishFaculty > div {
+  margin: 1em 0;
+  padding: 0.5em;
+  background: #f8f8f8;
+  min-height: 3em;
+}
+
+.studio-title {
+  font-weight: bold;
+}
+.studio-title-en {
+  margin-left: 1em;
+  font-weight: 100;
+  opacity: 0.75;
+}
+pre#result {
+  background-color: #444;
+  color: #fff;
+  font-family: monospace;
+  font-size: 9px;
+}
+
+.studio-photo1,.studio-photo2{
+  width: 200px;
+}
+
+.faculty-image,.faculty-image-en{
+  width: 200px;
+  height: 200px;
+}
+
+.link-image{
+  width: 200px;
+  height: 200px;
+}
+
+.studio-image,.studio-image-en{
+  width: 50px;
+  height: 50px;
+}
+
+#loading {
+width: 100%;
+height: 100vh;
+background-color: #073a49;
+position: relative;
+}
+
+#loading img {
+position: absolute;
+top: 50%;
+left: 50%;
+}
+
+.hidden {
+display: none;
+}
+
+
+
+
+/* ========== * ==========*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*========== header nav ==========*/
+header ul{
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 80px;
+}
+header ul li{
+  list-style: none;
+  display: inline-block;
+}
+header ul li a{
+  text-decoration: none;
+  color: #363636;
+  line-height: 80px;
+  display: block;
+  padding: 0 10px;
+  font-size: 17px;
+}
+header ul li a:hover{
+  opacity: 0.5;
+}
+
+.open{
+  margin-top: 80px;
+}
+
+
+/* ========== main-visual ========== */
+.main-visual{
+  width: 100%;
+  height: 800px;
+  background: #2B2845;
+  color: #fff;
+}
+.main-visual h1{
+  color: #fff;
+  padding-top: 150px;
+  padding-left: 134px;
+}
+.main-visual h3{
+  padding-top: 300px;
+  padding-left: 500px;
+  font-size: 20px;
+}
+
+/* ========== common section title ========== */
+[id^="nomalContentsTitle"]  {
+  color: #363636;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+
+/* ========== aboutus ========== */
+#aboutus p{
+  display: block;
+  background: #E4EBEF;
+  padding: 50px 100px;
+}
+
+/* ========== works ========== */
+#works a{
+  text-align: center;
+}
+/* flex使う */
+/* もっと見る はbuttonか何かで覆う */
+
+/* ========== curriculum ========== */
+#curriculum p{
+  display: block;
+  background: #E4EBEF;
+  padding: 50px 100px;
+}
+
+/* ========== studios ========== */
+
+
+/* ========== admission ==========*/
+#admission #nomalAdmissionText{
+  background: #E4EBEF;
+  padding: 50px 100px;
+}
+#admission #nomalAdmissionText h4{
+  font-size: 25px;
+}
+#admission #nomalAdmissionText p, ol, ul{
+  padding-left: 100px;
+  /* padding-bottom: 20px; */
+}
+
+/* ========== question ========== */
+#question #nomalQText{
+  background: #E4EBEF;
+  padding: 50px 100px;
+}
+
+/* footer作成 */
