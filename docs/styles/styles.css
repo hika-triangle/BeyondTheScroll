@@ -1,197 +1,219 @@
 
-body {
-  font-family: sans-serif;
-}
-h1, h2 {
-  font-weight: 400;
-  color: steelblue;
-}
-#nomalStudios > div {
-  margin: 1em 0;
-  padding: 0.5em;
-  background: #f8f8f8;
-  min-height: 3em;
+/*画面全体の設定*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: 20px;
 }
 
-#englishStudios > div {
-  margin: 1em 0;
-  padding: 0.5em;
-  background: #f8f8f8;
-  min-height: 3em;
+h1{
+  font-size: 40px;
+  letter-spacing: 30px;
 }
 
-#nomalFaculty > div {
-  margin: 1em 0;
-  padding: 0.5em;
-  background: #f8f8f8;
-  min-height: 3em;
-}
-
-#englishFaculty > div {
-  margin: 1em 0;
-  padding: 0.5em;
-  background: #f8f8f8;
-  min-height: 3em;
-}
-
-.studio-title {
-  font-weight: bold;
-}
-.studio-title-en {
-  margin-left: 1em;
-  font-weight: 100;
-  opacity: 0.75;
-}
-pre#result {
-  background-color: #444;
-  color: #fff;
-  font-family: monospace;
-  font-size: 9px;
-}
-
-.studio-photo1,.studio-photo2{
-  width: 200px;
-}
-
-.faculty-image,.faculty-image-en{
-  width: 200px;
-  height: 200px;
-}
-
-.link-image{
-  width: 200px;
-  height: 200px;
-}
-
-.studio-image,.studio-image-en{
-  width: 50px;
-  height: 50px;
-}
-
-#loading {
-width: 100%;
-height: 100vh;
-background-color: #073a49;
-position: relative;
-}
-
-#loading img {
-position: absolute;
-top: 50%;
-left: 50%;
-}
-
-.hidden {
-display: none;
-}
-
-
-
-
-/* ========== * ==========*/
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/*========== header nav ==========*/
-header ul{
-  position: fixed;
-  top: 0;
-  background: #fff;
-  width: 100%;
-  height: 80px;
-}
-header ul li{
-  list-style: none;
-  display: inline-block;
-}
-header ul li a{
-  text-decoration: none;
-  color: #363636;
-  line-height: 80px;
-  display: block;
-  padding: 0 10px;
-  font-size: 17px;
-}
-header ul li a:hover{
-  opacity: 0.5;
-}
-
-.open{
-  margin-top: 80px;
-}
-
-
-/* ========== main-visual ========== */
-.main-visual{
-  width: 100%;
-  height: 800px;
-  background: #2B2845;
-  color: #fff;
-}
-.main-visual h1{
-  color: #fff;
-  padding-top: 150px;
-  padding-left: 134px;
-}
-.main-visual h3{
-  padding-top: 300px;
-  padding-left: 500px;
+p{
   font-size: 20px;
 }
 
-/* ========== common section title ========== */
-[id^="nomalContentsTitle"]  {
-  color: #363636;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  font-size: 30px;
-}
-
-/* ========== aboutus ========== */
-#aboutus p{
-  display: block;
-  background: #E4EBEF;
-  padding: 50px 100px;
-}
-
-/* ========== works ========== */
-#works a{
-  text-align: center;
-}
-/* flex使う */
-/* もっと見る はbuttonか何かで覆う */
-
-/* ========== curriculum ========== */
-#curriculum p{
-  display: block;
-  background: #E4EBEF;
-  padding: 50px 100px;
-}
-
-/* ========== studios ========== */
 
 
-/* ========== admission ==========*/
-#admission #nomalAdmissionText{
-  background: #E4EBEF;
-  padding: 50px 100px;
+
+/*固定する背景*/
+div {
+  box-sizing: border-box;
+  color: gray;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
 }
-#admission #nomalAdmissionText h4{
-  font-size: 25px;
-}
-#admission #nomalAdmissionText p, ol, ul{
-  padding-left: 100px;
-  /* padding-bottom: 20px; */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350%;
+  padding: 5%;
 }
 
-/* ========== question ========== */
-#question #nomalQText{
-  background: #E4EBEF;
-  padding: 50px 100px;
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url(../image/ame02_4.png);
+  z-index: 0;
+}
+.img-bg-02 {
+  background-image: url(../image/ame03_2.png);
+  z-index: 0;
+}
+.img-bg-03 {
+  background-image: url(../image/ame04_5.png);
+}
+.img-bg-04 {
+  background-image: url(../image/ame06_2.png);
+}
+.img-bg-05 {
+  background-image: url(../image/ame05_3.png);
+}
+.img-bg-06 {
+  background-image: url(../image/ame07_2.png);
+}
+.img-bg-07 {
+  background-image: url(../image/ame08_3.png);
+}
+.img-bg-08 {
+  background-image: url(../image/ame09_4.png);
 }
 
-/* footer作成 */
+/*スクロールするコンテンツ*/
+.scrollbox1 {
+  background-color: #FFF;
+  height: 100%;
+  padding: 0%;
+}
+.scrollbox2 {
+  background-color: #222;
+  height: 100%;
+  padding: 0%;
+}
+.scrollbox3 {
+  height: 100%;
+  padding: 0%;
+  z-index: 10;
+}
+
+
+#floatButton1{
+  z-index: 1;
+  position: -webkit-sticky;  /* for Safari */
+  position: fixed;
+  top: 0px;
+}
+
+.scrollbox1 p{
+  line-height: 150px;
+}
+
+#animation {
+  margin: 50px 0;
+  font-size: 15px;
+  color: #ffffff;
+  }
+  
+  .fadeInDown {
+   -webkit-animation-fill-mode:both;
+   -ms-animation-fill-mode:both;
+   animation-fill-mode:both;
+   -webkit-animation-duration:1s;
+   -ms-animation-duration:1s;
+   animation-duration:1s;
+   -webkit-animation-name: fadeInDown;
+   animation-name: fadeInDown;
+   visibility: visible !important;
+  }
+  @-webkit-keyframes fadeInDown {
+   0% { opacity: 0; -webkit-transform: translateY(-20px); }
+   100% { opacity: 1; -webkit-transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+   0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+   100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+  }
+
+
+
+  
+  .text-focus-in {
+      -webkit-animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+              animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+  
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+
+  .text-focus-in2 {
+    -webkit-animation: text-focus-in 4.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 4.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in2 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in2 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.text-focus-in3 {
+  -webkit-animation: text-focus-in 60s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 60s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in3 {
+0% {
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  opacity: 0;
+}
+100% {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  opacity: 1;
+}
+}
+@keyframes text-focus-in3 {
+0% {
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  opacity: 0;
+}
+100% {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  opacity: 1;
+}
+}
+
